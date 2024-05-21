@@ -33,6 +33,7 @@ import Messaging from "./pages/message";
 import Notification from "./pages/notification";
 import SignUp from "./Components/Login";
 import Login from "./Components/signing";
+import UserProfile from "./Components/accounts";
 
 function App() {
   return (
@@ -46,7 +47,9 @@ function App() {
       {/*<Messaging></Messaging>*/}
       {/*<Notification></Notification>*/}
       {/*<SignUp></SignUp>*/}
-      <Login></Login>
+      {/*<Login></Login>*/}
+
+      <UserProfile></UserProfile>
       
     
 
