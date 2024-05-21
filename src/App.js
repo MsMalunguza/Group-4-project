@@ -30,6 +30,7 @@ import Register2 from "./Components/LogIn/Register2";
 import Contact from "./pages/contact";
 import About from "./pages/about";
 import Messaging from "./pages/message";
+import Notification from "./pages/notification";
 
 function App() {
   return (
@@ -40,7 +41,9 @@ function App() {
       {/*<Register2></Register2> */}
       {/*<Contact></Contact> */}
       {/*<About></About> */}
-      <Messaging></Messaging>
+      {/*<Messaging></Messaging>*/}
+      <Notification></Notification>
+    
 
     </div>
   );
