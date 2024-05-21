@@ -4,12 +4,12 @@ import ProgressBar from './ProgressBar';
 import ProductList from './ProductList';
 
 const orderDetails = {
-    orderId: 'OD45345345435',
-    estimatedDelivery: '29 Nov 2019',
-    shippingBy: 'BLUEDART',
-    contact: '+1598675986',
-    status: 'Picked by the courier',
-    trackingNumber: 'BD045903594059',
+    orderId: 'PMT 1',
+    estimatedDelivery: '22 may 2024',
+    shippingBy: 'PACHALO',
+    contact: '0999473426',
+    status: 'Picked by the pachalo',
+    trackingNumber: 'BED/COM/14/22',
     items: [
         {
             name: 'Dell Laptop with 500GB HDD 8GB RAM',

@@ -9,7 +9,7 @@ const ProgressBar = () => {
             </div>
             <div className="progress-step completed">
                 <i className="fas fa-truck icon"></i>
-                <p>Picked by courier</p>
+                <p>Picked by pachalo</p>
             </div>
             <div className="progress-step">
                 <i className="fas fa-box-open icon"></i>

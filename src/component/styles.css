@@ -79,13 +79,22 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 1;
     margin-right: 16px;
+    text-align: center;
+}
+
+.product-card:last-child {
+    margin-right: 0;
 }
 
 .product-card img {
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     margin-bottom: 16px;
+}
+
+.product-info {
+    text-align: left;
 }
 
 .product-card h3 {
