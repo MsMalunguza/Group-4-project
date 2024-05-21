@@ -31,6 +31,8 @@ import Contact from "./pages/contact";
 import About from "./pages/about";
 import Messaging from "./pages/message";
 import Notification from "./pages/notification";
+import SignUp from "./Components/Login";
+import Login from "./Components/signing";
 
 function App() {
   return (
@@ -42,7 +44,10 @@ function App() {
       {/*<Contact></Contact> */}
       {/*<About></About> */}
       {/*<Messaging></Messaging>*/}
-      <Notification></Notification>
+      {/*<Notification></Notification>*/}
+      {/*<SignUp></SignUp>*/}
+      <Login></Login>
+      
     
 
     </div>

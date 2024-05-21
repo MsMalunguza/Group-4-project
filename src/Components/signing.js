@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 
-const SignUp = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
-    birthDate: '',
-    phoneNumber: '',
     password: '',
-    confirmPassword: '',
   });
 
   const handleChange = (e) => {
@@ -32,21 +28,11 @@ const SignUp = () => {
         <p className="text-center mb-6">Let's get started with your 30 days free trial</p>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700">First name</label>
+            <label className="block text-gray-700">Name</label>
             <input
               type="text"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-light"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Last name</label>
-            <input
-              type="text"
-              name="lastName"
-              value={formData.lastName}
+              name="name"
+              value={formData.name}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-light"
             />
@@ -61,42 +47,12 @@ const SignUp = () => {
               className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-light"
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Birth date</label>
-            <input
-              type="date"
-              name="birthDate"
-              value={formData.birthDate}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-light"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Phone number</label>
-            <input
-              type="tel"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-light"
-            />
-          </div>
-          <div className="mb-4">
+          <div className="mb-4 relative">
             <label className="block text-gray-700">Password</label>
             <input
               type="password"
               name="password"
               value={formData.password}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-light"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Confirm password</label>
-            <input
-              type="password"
-              name="confirmPassword"
-              value={formData.confirmPassword}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brown-light"
             />
@@ -135,4 +91,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Login;
