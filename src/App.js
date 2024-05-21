@@ -34,6 +34,8 @@ import Notification from "./pages/notification";
 import SignUp from "./Components/Login";
 import Login from "./Components/signing";
 import UserProfile from "./Components/accounts";
+import Header from "./Components/header";
+import Footer from "./Components/footer";
 
 function App() {
   return (
@@ -48,8 +50,9 @@ function App() {
       {/*<Notification></Notification>*/}
       {/*<SignUp></SignUp>*/}
       {/*<Login></Login>*/}
-
+      <Header></Header>
       <UserProfile></UserProfile>
+      <Footer></Footer>
       
     
 
