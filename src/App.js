@@ -27,6 +27,9 @@ import Register from "./Components/LogIn/Register";
 import LogIn from "./Components/LogIn/LogIn";
 import LogIn2 from "./Components/LogIn/LogIn2";
 import Register2 from "./Components/LogIn/Register2";
+import Contact from "./pages/contact";
+import About from "./pages/about";
+import Messaging from "./pages/message";
 
 function App() {
   return (
@@ -34,7 +37,11 @@ function App() {
       {/* <Register></Register> */}
       {/* <LogIn></LogIn>*/}
       {/*<LogIn2></LogIn2>*/}
-      <Register2></Register2> 
+      {/*<Register2></Register2> */}
+      {/*<Contact></Contact> */}
+      {/*<About></About> */}
+      <Messaging></Messaging>
+
     </div>
   );
 }
