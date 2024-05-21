@@ -4,24 +4,22 @@ const ProgressBar = () => {
     return (
         <div className="progress-bar">
             <div className="progress-step completed">
-                <div className="circle"></div>
+                <i className="fas fa-check-circle icon"></i>
                 <p>Order confirmed</p>
-                <div className="line"></div>
             </div>
             <div className="progress-step completed">
-                <div className="circle"></div>
+                <i className="fas fa-truck icon"></i>
                 <p>Picked by courier</p>
-                <div className="line"></div>
             </div>
             <div className="progress-step">
-                <div className="circle"></div>
+                <i className="fas fa-box-open icon"></i>
                 <p>On the way</p>
-                <div className="line gray"></div>
             </div>
             <div className="progress-step">
-                <div className="circle gray"></div>
+                <i className="fas fa-clipboard-check icon"></i>
                 <p>Ready for pickup</p>
             </div>
+            <div className="progress-line"></div>
         </div>
     );
 };

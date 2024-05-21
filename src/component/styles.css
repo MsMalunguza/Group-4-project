@@ -9,21 +9,26 @@ body {
 }
 
 .card {
-    background-color: #fff;
-    padding: 24px;
+    background-color: #f3f3f3;
+    padding: 16px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
 }
 
 .order-details {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 24px;
+    padding: 16px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
 }
 
-.order-info p,
-.shipping-info p {
-    margin: 0 0 8px;
+.order-info, .shipping-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .progress-bar {
@@ -32,40 +37,34 @@ body {
     align-items: center;
     margin-bottom: 24px;
     position: relative;
+    padding: 16px 0;
 }
 
 .progress-step {
     flex: 1;
     text-align: center;
     position: relative;
+    z-index: 1;
 }
 
-.progress-step .circle {
-    background-color: #ffa500;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    margin: 0 auto;
-    z-index: 10;
+.progress-step .icon {
+    color: #ffa500;
+    font-size: 24px;
+    margin-bottom: 8px;
 }
 
-.progress-step .line {
+.progress-step.completed .icon {
+    color: #ffa500;
+}
+
+.progress-line {
     position: absolute;
     top: 50%;
-    width: 100%;
+    left: 10%;
+    width: 80%;
     height: 2px;
     background-color: #ffa500;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-.progress-step.completed .circle {
-    background-color: #ffa500;
-}
-
-.progress-step .line.gray,
-.progress-step .circle.gray {
-    background-color: #d3d3d3;
+    z-index: 0;
 }
 
 .product-list {
@@ -80,10 +79,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 1;
     margin-right: 16px;
-}
-
-.product-card:last-child {
-    margin-right: 0;
 }
 
 .product-card img {
