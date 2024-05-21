@@ -4,7 +4,7 @@ const ProductList = ({ items }) => {
     return (
         <div className="product-list">
             {items.map((item, index) => (
-                <div key={index} className="product-card card">
+                <div key={index} className="product-card">
                     <img src={item.image} alt={item.name} />
                     <div>
                         <h3>{item.name}</h3>

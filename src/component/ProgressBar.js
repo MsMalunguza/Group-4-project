@@ -3,12 +3,12 @@ import React from 'react';
 const ProgressBar = () => {
     return (
         <div className="progress-bar">
-            <div className="progress-step">
+            <div className="progress-step completed">
                 <div className="circle"></div>
                 <p>Order confirmed</p>
                 <div className="line"></div>
             </div>
-            <div className="progress-step">
+            <div className="progress-step completed">
                 <div className="circle"></div>
                 <p>Picked by courier</p>
                 <div className="line"></div>

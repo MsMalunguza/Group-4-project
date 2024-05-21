@@ -9,18 +9,21 @@ body {
 }
 
 .card {
-    background-color: #f3f3f3;
-    padding: 16px;
+    background-color: #fff;
+    padding: 24px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 24px;
 }
 
 .order-details {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 24px;
+}
+
+.order-info p,
+.shipping-info p {
+    margin: 0 0 8px;
 }
 
 .progress-bar {
@@ -56,10 +59,11 @@ body {
     transform: translateY(-50%);
 }
 
-.progress-step .line.gray {
-    background-color: #d3d3d3;
+.progress-step.completed .circle {
+    background-color: #ffa500;
 }
 
+.progress-step .line.gray,
 .progress-step .circle.gray {
     background-color: #d3d3d3;
 }
@@ -76,6 +80,10 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 1;
     margin-right: 16px;
+}
+
+.product-card:last-child {
+    margin-right: 0;
 }
 
 .product-card img {
