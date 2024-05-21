@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { NavLink } from "react-router-dom";
 
 export default function Register2() {
   const {
@@ -12,7 +13,7 @@ export default function Register2() {
   return (
     <div className="h-screen flex flex-col items-center justify-center ">
       <form
-        className=" flex flex-col  rounded-lg w-96"
+        className=" flex flex-col rounded-lg w-96 shadow-2xl bg-gray-300 w-5/12 pl-14 pr-14"
         onSubmit={handleSubmit(onSubmit)}
       >
         <h1 className="font-bold  text-3xl p-2">Register</h1>
@@ -71,6 +72,7 @@ export default function Register2() {
             className="border-2 rounded-full p-2 m-2"
             {...register("password", { required: true })}
             placeholder="password"
+            type="password"
             id="password"
             aria-invalid={errors.password ? "true" : "false"}
           />
@@ -82,11 +84,15 @@ export default function Register2() {
         )}
 
         <div className="flex items-center mb-2 p-2">
-          <label htmlFor="comfirmPassword"> Comfirm Password</label>
+          <label htmlFor="comfirmPassword mr-2" className="mr-2">
+            {" "}
+            Comfirm Password
+          </label>
           <input
             className="border-2 rounded-full p-2 "
             {...register("comfirmPassword", { required: true })}
             placeholder="comfirmPassword"
+            type="password"
             id="comfirmPassword"
             aria-invalid={errors.comfirmPassword ? "true" : "false"}
           />
@@ -127,10 +133,24 @@ export default function Register2() {
           </p>
         )} */}
 
-        <input
+        {/* <input
           className="border-2 rounded-full p-2 hover:bg-gray-100 w-40 mr-auto ml-auto mb-6 "
           type="submit"
-        />
+        /> */}
+
+        <div className="flex flex-around mt-4">
+          <input
+            className="uppercase text-white bg-black text-center border-2 rounded-full p-2 hover:bg-white hover:text-black w-40 mr-auto ml-auto mb-6 transition duration-700 ease-in-out"
+            type="submit"
+          />
+
+          <NavLink
+            to="/login"
+            className="bg-yellow-700 text-center border-2 rounded-full p-2 hover:bg-gray-100 w-40 mr-auto ml-auto mb-6 transition duration-700 ease-in-out"
+          >
+            SIGN IN
+          </NavLink>
+        </div>
       </form>
     </div>
   );
