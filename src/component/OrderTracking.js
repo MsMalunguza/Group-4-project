@@ -11,22 +11,34 @@ const orderDetails = {
     status: 'Picked by the courier',
     trackingNumber: 'BD045903594059',
     items: [
-        { name: 'Dell Laptop with 500GB HDD 8GB RAM', price: '$950', image: 'https://via.placeholder.com/100' },
-        { name: 'HP Laptop with 500GB HDD 8GB RAM', price: '$850', image: 'https://via.placeholder.com/100' },
-        { name: 'ACER Laptop with 500GB HDD 8GB RAM', price: '$650', image: 'https://via.placeholder.com/100' }
+        {
+            name: 'Dell Laptop with 500GB HDD 8GB RAM',
+            price: '$950',
+            image: 'https://example.com/images/dell-laptop.jpg'
+        },
+        {
+            name: 'HP Laptop with 500GB HDD 8GB RAM',
+            price: '$850',
+            image: 'https://example.com/images/hp-laptop.jpg'
+        },
+        {
+            name: 'ACER Laptop with 500GB HDD 8GB RAM',
+            price: '$650',
+            image: 'https://example.com/images/acer-laptop.jpg'
+        }
     ]
 };
 
 const OrderTracking = () => {
     return (
-        <div className="max-w-4xl mx-auto p-4">
-            <div className="bg-white shadow-md rounded-lg p-6">
-                <h2 className="text-lg font-semibold mb-4">My Orders / Tracking</h2>
+        <div className="container">
+            <div className="order-tracking card">
+                <h2>My Orders / Tracking</h2>
                 <OrderDetails details={orderDetails} />
                 <ProgressBar />
                 <ProductList items={orderDetails.items} />
-                <div className="text-right mt-6">
-                    <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Back to orders</button>
+                <div className="text-right">
+                    <button className="button">Back to orders</button>
                 </div>
             </div>
         </div>
