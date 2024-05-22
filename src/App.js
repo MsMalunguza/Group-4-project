@@ -23,17 +23,14 @@ import React from "react";
 
 // export default App;
 
-import Register from "./Components/LogIn/Register";
-import LogIn from "./Components/LogIn/LogIn";
-import LogIn2 from "./Components/LogIn/LogIn2";
+
 import Register2 from "./Components/LogIn/Register2";
+import ticketing from "./digitalTicketing/ticketing";
 
 function App() {
   return (
     <div>
-      {/* <Register></Register> */}
-      {/* <LogIn></LogIn>*/}
-      {/*<LogIn2></LogIn2>*/}
+     <ticketing></ticketing>
       <Register2></Register2> 
     </div>
   );

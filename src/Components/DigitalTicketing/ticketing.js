@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
-
 const App = () => {
   const [qrCodeValue, setQrCodeValue] = useState('');
   const [formValues, setFormValues] = useState({
