@@ -5,6 +5,7 @@ import App from "./App";
 import Register2 from "./Components/LogIn/Register2";
 import LogIn2 from "./Components/LogIn/LogIn2";
 import Contact from "./Components/Contact";
+import Payments from "./Components/Payments";
 
 const router = createBrowserRouter([
   {
@@ -28,5 +29,9 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <Contact></Contact>,
   },
+  {
+    path:"/Payments",
+    element: <Payments></Payments>
+  }
 ]);
 export default router;

@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Banner from "./Components/Banner";
 import Card from "./Components/Card";
+import Payments from "./Components/Payments";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Card></Card>
 
       <Footer></Footer>
+      <Payments></Payments>
     </div>
   );
 }
