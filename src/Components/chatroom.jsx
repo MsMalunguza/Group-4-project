@@ -35,23 +35,29 @@ const ChatRoom = () => {
             className="w-12 h-12 rounded-full"
           />
           <div>
-            <h2 className="text-lg font-semibold">User Profile</h2>
-            <p className="text-gray-600">@username</p>
+            <h2 className="text-lg font-semibold">User 79884</h2>
+            <p className="text-gray-600">@MISHECK</p>
           </div>
         </div>
         <div className="mt-6">
           <h3 className="text-lg font-semibold">Other Info</h3>
           <ul className="mt-2 text-gray-700">
-            <li className="mt-1">Email: user@example.com</li>
+            <li className="mt-1">Email: bsc-com-01-21@unima.ac.mw</li>
             <li className="mt-1">Joined: January 2024</li>
             <li className="mt-1">Status: Online</li>
+            <br />
           </ul>
         </div>
+        <ul>
+            <li><strong>Categories intrested:</strong> Stationaries <br /> Clothing</li>
+            <li></li>
+            <li></li>
+        </ul>
       </div>
 
       {/* Chat area */}
       <div className="flex flex-col flex-grow">
-        <div className="flex-shrink-0 p-4 bg-blue-500 text-white">
+        <div className="flex-shrink-0 p-4 bg-blue-400 text-white">
           <h1 className="text-xl font-semibold">Chat Room</h1>
         </div>
         <div className="flex flex-col flex-grow p-4 overflow-auto">
@@ -59,7 +65,7 @@ const ChatRoom = () => {
             <Messagingf key={message.id} sender={message.sender} text={message.text} />
           ))}
         </div>
-        <div className="flex p-4 bg-white border-t border-gray-300">
+        <div className="flex p-4 bg-white border-t border-gray-400">
           <input
             type="text"
             className="flex-grow p-2 border border-gray-300 rounded-l-lg"

@@ -52,6 +52,7 @@ function App() {
       {/*<SignUp></SignUp>*/}
       {/*<Login></Login>*/}
       {/*<UserProfile></UserProfile> */}
+      {/*<ChatRoom></ChatRoom> */}
       <Header></Header>
       <ChatRoom></ChatRoom>
       <Footer></Footer>
