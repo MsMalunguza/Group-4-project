@@ -8,18 +8,19 @@ function About() {
           <h1 className="text-4xl font-bold text-gray-800">OUR COMPANY</h1>
         </div>
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold text-gray-700">THE BUSINESS OF GOOD FOOD</h2>
+          <h2 className="text-2xl font-semibold text-gray-700">THE UNIVERSITY MARKET-PLACE</h2>
           <p className="mt-4 text-gray-600">
-            When Chipotle opened its first restaurant in 1993, the idea was simple: show that food served fast didn’t have to be a "fast-food" experience. Using high-quality raw ingredients, classic cooking techniques, and distinctive interior design, we brought features from the realm of fine dining to the world of quick-service restaurants.
-          </p>
+          Welcome to Student Market, the ultimate online marketplace designed specifically for students. Our mission is to create a seamless platform where students can easily buy and sell a wide range of products, from textbooks and electronics to furniture and clothing.</p>
           <p className="mt-4 text-gray-600">
-            Over 23 years later, our devotion to seeking out the very best ingredients we can—raised with respect for animals, farmers, and the environment—remains at the core of our commitment to Food With Integrity. And as we’ve grown, our mission has expanded to ensuring that better food is accessible to everyone.
-          </p>
-          <button className="mt-6 px-6 py-3 text-white bg-indigo-600 rounded-lg hover:bg-indigo-700">FOOD WITH INTEGRITY</button>
+          We understand the unique needs and budget constraints of students, and we aim to provide an affordable, convenient, and secure shopping experience. Whether you're looking to make some extra cash by selling items you no longer need, or you're on the hunt for great deals on essential products, 
+          Student Market has got you covered.<br /><br />Our platform is user-friendly, 
+          ensuring that even those with minimal technical skills can navigate and use our services effortlessly. We prioritize safety and transparency, offering features like verified profiles and secure payment options to protect our users.</p>
+          
+          <button className="mt-6 px-6 py-3 text-white bg-black rounded-lg hover:bg-gray-800">EXPLORE MORE</button>
         </div>
         <div className="flex flex-col md:flex-row md:space-x-8">
           <div className="flex-1 p-4 bg-gray-200 rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-800">GET YOUR CAREER ROLLING AT CHIPOTLE</h3>
+            <h3 className="text-xl font-semibold text-gray-800">BE PART OF THE UNIVRSITY E-COMMERCE</h3>
             <p className="mt-2 text-gray-600">
               We’re growing quickly and are always looking for great new people to add to our team.
             </p>

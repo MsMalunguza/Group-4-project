@@ -45,13 +45,14 @@ function App() {
       {/*<LogIn2></LogIn2>*/}
       {/*<Register2></Register2> */}
       {/*<Contact></Contact> */}
-      {/*<About></About> */}
+      {/* */}
       {/*<Messaging></Messaging>*/}
       {/*<Notification></Notification>*/}
       {/*<SignUp></SignUp>*/}
       {/*<Login></Login>*/}
+      {/*<UserProfile></UserProfile> */}
       <Header></Header>
-      <UserProfile></UserProfile>
+      <About></About>
       <Footer></Footer>
       
     

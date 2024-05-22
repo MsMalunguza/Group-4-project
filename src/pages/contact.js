@@ -4,9 +4,9 @@ function Contact() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-4xl p-8 bg-white rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Contact Us</h1>
+        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">CONTACT US</h1>
         <p className="text-center text-gray-600 mb-6">
-          Need to get in touch with us? Either fill out the form with your inquiry or find the <a href="mailto:support@example.com" className="text-indigo-600">department email</a> you'd like to contact below.
+          Need to get in touch with us? Either fill out the form with your inquiry or find the <a href="misheck:bsc-com-01-21@unima.ac.mw" className="text-indigo-600">department email</a> you'd like to contact below.
         </p>
         <form className="space-y-6">
           <div className="flex flex-col md:flex-row md:space-x-4">
@@ -27,8 +27,8 @@ function Contact() {
             <label className="block text-gray-700">What can we help you with?</label>
             <textarea className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" rows="4" placeholder="Your message"></textarea>
           </div>
-          <button type="submit" className="w-full px-4 py-2 font-bold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600">Submit</button>
-        </form>
+          <button type="submit" className="w-full px-4 py-2 font-bold text-white bg-black rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-black">Submit</button>
+     </form>
       </div>
     </div>
   );
