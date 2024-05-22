@@ -49,7 +49,7 @@ const ChatRoom = () => {
           </ul>
         </div>
         <ul>
-            <li><strong>Categories intrested:</strong> Stationaries <br /> Clothing</li>
+            <li><strong>Categories intrested:</strong> Stationaries <br /> Clothing <br />Food</li>
             <li></li>
             <li></li>
         </ul>

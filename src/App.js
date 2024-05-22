@@ -45,16 +45,16 @@ function App() {
       {/* <LogIn></LogIn>*/}
       {/*<LogIn2></LogIn2>*/}
       {/*<Register2></Register2> */}
-      {/*<Contact></Contact> */}
+      {/* */}
       {/* <About></About>*/}
       {/*<Messaging></Messaging>*/}
       {/*<Notification></Notification>*/}
       {/*<SignUp></SignUp>*/}
       {/*<Login></Login>*/}
       {/*<UserProfile></UserProfile> */}
-      {/*<ChatRoom></ChatRoom> */}
+      {/* <ChatRoom></ChatRoom>*/}
       <Header></Header>
-      <ChatRoom></ChatRoom>
+      <Contact></Contact>
       <Footer></Footer>
       
     
