@@ -48,14 +48,14 @@ function App() {
       {/* */}
       {/* <About></About>*/}
       {/**/}
-      {/*<Notification></Notification>*/}
+      {/**/}
       {/*<SignUp></SignUp>*/}
       {/*<Login></Login>*/}
       {/*<UserProfile></UserProfile> */}
       {/* <ChatRoom></ChatRoom>*/}
       {/**/}
       <Header></Header>
-      <ChatRoom></ChatRoom>
+      <Notification></Notification>
       <Footer></Footer>
       
     
