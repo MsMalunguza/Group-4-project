@@ -70,9 +70,14 @@ body {
     z-index: 0;
 }
 
+.product-list-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 16px;
+}
+
 .product-list {
     display: flex;
-    justify-content: space-between;
 }
 
 .product-card {
@@ -81,7 +86,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1;
+    display: inline-block;
+    width: 300px;
     margin-right: 16px;
 }
 
