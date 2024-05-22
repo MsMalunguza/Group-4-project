@@ -20,7 +20,7 @@ function Header() {
   return (
     <>
       <header className="h-100%">
-        <div className="bg-gray-800 py-1 px-3 text-xs text-white">
+        <div className="bg-gray-800 py-1 px-3 text-large text-white">
           <div className="flex justify-between">
             <div>
               <p>Free Delivery Over k10,000 & Free Return</p>
@@ -82,7 +82,7 @@ function Header() {
           </div>
         </div>
 
-        <div className="header-bottom-strip bg-gray-800 p-3 text-xs text-white">
+        <div className="header-bottom-strip bg-gray-800 p-3 text-xl text-white">
           <div className="container mx-auto">
             <div className="flex items-center space-x-4">
               <Dropdown></Dropdown>
@@ -92,27 +92,18 @@ function Header() {
                   Home
                 </NavLink>
                 <NavLink to="/" className="text-white">
-                  Electronics
+                  Digital ticketing
                 </NavLink>
                 <NavLink to="/" className="text-white">
-                  Clothing
+                  orders/Tracking
                 </NavLink>
                 <NavLink to="/" className="text-white">
-                  Accessories
-                </NavLink>
-                <NavLink to="/" className="text-white">
-                  Stationary
-                </NavLink>
-                <NavLink to="/Contact" className="text-white">
-                  Food
-                </NavLink>
-                <NavLink to="/Contact" className="text-white">
                   Support
                 </NavLink>
-                <NavLink to="/contact" className="text-white">
+                <NavLink to="/" className="text-white">
                   Contact
                 </NavLink>
-                <NavLink to="/Contact" className="text-white">
+                <NavLink to="/" className="text-white">
                   About
                 </NavLink>
               </div>

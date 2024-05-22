@@ -1,4 +1,5 @@
 import img1 from "./laptop2.webp";
+
 export default function Card() {
   return (
     <div>
@@ -11,7 +12,7 @@ export default function Card() {
             <h3 class="text-md font-semibold text-gray-600">
               Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
             </h3>
-            <p class="mt-4 text-lg font-thin">mwk 240,000</p>
+            <p class="mt-4 text-lg font-thin">mwk 350,000</p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,16 +34,13 @@ export default function Card() {
         </div>
         <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
           <div>
-            <img
-              src="https://media.cnn.com/api/v1/images/stellar/prod/201116214440-9-macbook-air-review-silicon-underscoredjpg.jpg?q=w_2615,h_1556,x_0,y_0,c_fill"
-              alt=""
-            />
+            <img src={img1} alt="" />
           </div>
           <div class="py-4 px-4 bg-white">
             <h3 class="text-md font-semibold text-gray-600">
               Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
             </h3>
-            <p class="mt-4 text-lg font-thin">MWK 250,000</p>
+            <p class="mt-4 text-lg font-thin">MWK 350,000</p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,10 +93,7 @@ export default function Card() {
         </div>
         <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
           <div>
-            <img
-              src="https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/g1jzwrwrlfim5wux_1623141909.jpeg"
-              alt=""
-            />
+            <img src={img1} alt="" />"
           </div>
           <div class="py-4 px-4 bg-white">
             <h3 class="text-md font-semibold text-gray-600">

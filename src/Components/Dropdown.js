@@ -18,7 +18,7 @@ const Dropdown = () => {
           aria-expanded="true"
           aria-haspopup="true"
         >
-          Market Category
+          cart Log
           <svg
             className="-mr-1 ml-2 h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"
@@ -45,27 +45,19 @@ const Dropdown = () => {
           <div className="py-1" role="none">
             <a
               href="/#"
-              className="text-white block px-4 py-2 text-sm hover:text-yellow-500"
+              className="text-white block px-4 py-2 text-md hover:text-yellow-500"
               role="menuitem"
               onClick={() => alert("Trending")}
             >
-              Trending
+              Recommended
             </a>
             <a
               href="/#"
-              className="text-white block px-4 py-2 text-sm hover:text-yellow-500"
+              className="text-white block px-4 py-2 text-md hover:text-yellow-500"
               role="menuitem"
               onClick={() => alert("Recommending")}
             >
-              Recommending
-            </a>
-            <a
-              href="/#"
-              className="text-white block px-4 py-2 text-sm hover:text-yellow-500"
-              role="menuitem"
-              onClick={() => alert("New")}
-            >
-              New
+              Trending
             </a>
           </div>
         </div>
