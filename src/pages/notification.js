@@ -10,7 +10,7 @@ const Notification = () => {
       const data = [
         {
           id: 1,
-          name: 'James Donnelly',
+          name: 'JAMES BANDA',
           message: 'will attend your event: Volunteer Group',
           time: '13 minutes ago',
           image: 'https://via.placeholder.com/40',
@@ -18,7 +18,7 @@ const Notification = () => {
         },
         {
           id: 2,
-          name: 'Evelyn Gomez',
+          name: 'Q-TECH TRADING GROUP',
           message: 'created a forum topic: Where is the new employee handbook and paperwork?',
           time: '14 minutes ago',
           image: 'https://via.placeholder.com/40',
@@ -26,7 +26,7 @@ const Notification = () => {
         },
         {
           id: 3,
-          name: 'Antonia Murray',
+          name: '',
           message: 'has requested to join the space: Information Technology',
           time: '15 minutes ago',
           image: 'https://via.placeholder.com/40',
