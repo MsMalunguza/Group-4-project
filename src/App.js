@@ -47,12 +47,13 @@ function App() {
       {/*<Register2></Register2> */}
       {/* */}
       {/* <About></About>*/}
-      {/*<Messaging></Messaging>*/}
+      {/**/}
       {/*<Notification></Notification>*/}
       {/*<SignUp></SignUp>*/}
       {/*<Login></Login>*/}
       {/*<UserProfile></UserProfile> */}
       {/* <ChatRoom></ChatRoom>*/}
+      {/**/}
       <Header></Header>
       <ChatRoom></ChatRoom>
       <Footer></Footer>
