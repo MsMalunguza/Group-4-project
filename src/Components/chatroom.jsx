@@ -32,7 +32,7 @@ const ChatRoom = () => {
           <img
             src="https://via.placeholder.com/50"
             alt="User Avatar"
-            className="w-12 h-12 rounded-full"
+            className="w-20 h-20 rounded-full"
           />
           <div>
             <h2 className="text-lg font-semibold">User 79884</h2>
@@ -40,18 +40,24 @@ const ChatRoom = () => {
           </div>
         </div>
         <div className="mt-6">
-          <h3 className="text-lg font-semibold">Other Info</h3>
+          <h3 className="text-lg font-semibold">Other Information</h3>
           <ul className="mt-2 text-gray-700">
-            <li className="mt-1">Email: bsc-com-01-21@unima.ac.mw</li>
+            <li className="mt-1">Email: bsc-com-01-21@unima</li>
             <li className="mt-1">Joined: January 2024</li>
             <li className="mt-1">Status: Online</li>
             <br />
           </ul>
         </div>
         <ul>
-            <li><strong>Categories intrested:</strong> Stationaries <br /> Clothing <br />Food</li>
-            <li></li>
-            <li></li>
+            <li><strong>Categories intrested:</strong><p className="text-gray-600">Stationaries <br /> Clothing <br />Food</p> </li>
+            <br />
+            <strong>
+            <p>Other Social Links</p>
+            <li><a href="https://twitter.com/johndoe" className="text-blue-500 hover:underline mr-4">Twitter</a></li>
+            <li><a href="https://linkedin.com/in/johndoe" className="text-blue-500 hover:underline">LinkedIn</a></li>
+            <li><a href="#" className="text-blue-500 hover:underline">088800900</a></li>
+            
+            </strong>
         </ul>
       </div>
 

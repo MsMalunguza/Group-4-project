@@ -54,7 +54,7 @@ function App() {
       {/*<UserProfile></UserProfile> */}
       {/* <ChatRoom></ChatRoom>*/}
       <Header></Header>
-      <Contact></Contact>
+      <ChatRoom></ChatRoom>
       <Footer></Footer>
       
     
