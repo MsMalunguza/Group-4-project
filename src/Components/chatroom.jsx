@@ -1,0 +1,82 @@
+import React, { useState } from 'react';
+import Messagingf from './messagingft';
+
+const ChatRoom = () => {
+  const [messages, setMessages] = useState([
+    { id: 1, sender: 'senator', text: 'I feeliz' },
+    { id: 2, sender: 'senator', text: 'you are just like me' },
+    { id: 3, sender: 'senator', text: 'but what’s to judge?' },
+    { id: 4, sender: 'senator', text: 'and when our guard is down' },
+    { id: 5, sender: 'senator', text: 'that violence memes violence' },
+    { id: 6, sender: 'saucy_jack', text: 'Standing here' },
+    { id: 7, sender: 'saucy_jack', text: 'I’m trying to meme history' },
+    { id: 8, sender: 'saucy_jack', text: 'the right from wrong?' },
+    { id: 9, sender: 'saucy_jack', text: 'maybe we’ll both agree' },
+    { id: 10, sender: 'saucy_jack', text: 'and in the end' },
+    { id: 11, sender: 'saucy_jack', text: 'it has to be this way' },
+  ]);
+  const [newMessage, setNewMessage] = useState('');
+
+  const handleSendMessage = () => {
+    if (newMessage.trim()) {
+      setMessages([...messages, { id: messages.length + 1, sender: 'you', text: newMessage }]);
+      setNewMessage('');
+    }
+  };
+
+  return (
+    <div className="flex h-screen bg-gray-100">
+      {/* Sidebar */}
+      <div className="flex flex-col w-64 bg-gray-200 p-4 border-r border-gray-300">
+        <div className="flex items-center space-x-4 p-4">
+          <img
+            src="https://via.placeholder.com/50"
+            alt="User Avatar"
+            className="w-12 h-12 rounded-full"
+          />
+          <div>
+            <h2 className="text-lg font-semibold">User Profile</h2>
+            <p className="text-gray-600">@username</p>
+          </div>
+        </div>
+        <div className="mt-6">
+          <h3 className="text-lg font-semibold">Other Info</h3>
+          <ul className="mt-2 text-gray-700">
+            <li className="mt-1">Email: user@example.com</li>
+            <li className="mt-1">Joined: January 2024</li>
+            <li className="mt-1">Status: Online</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Chat area */}
+      <div className="flex flex-col flex-grow">
+        <div className="flex-shrink-0 p-4 bg-blue-500 text-white">
+          <h1 className="text-xl font-semibold">Chat Room</h1>
+        </div>
+        <div className="flex flex-col flex-grow p-4 overflow-auto">
+          {messages.map((message) => (
+            <Messagingf key={message.id} sender={message.sender} text={message.text} />
+          ))}
+        </div>
+        <div className="flex p-4 bg-white border-t border-gray-300">
+          <input
+            type="text"
+            className="flex-grow p-2 border border-gray-300 rounded-l-lg"
+            placeholder="Type a message..."
+            value={newMessage}
+            onChange={(e) => setNewMessage(e.target.value)}
+          />
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded-r-lg"
+            onClick={handleSendMessage}
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ChatRoom;

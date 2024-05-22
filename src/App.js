@@ -36,6 +36,7 @@ import Login from "./Components/signing";
 import UserProfile from "./Components/accounts";
 import Header from "./Components/header";
 import Footer from "./Components/footer";
+import ChatRoom from "./Components/chatroom";
 
 function App() {
   return (
@@ -45,14 +46,14 @@ function App() {
       {/*<LogIn2></LogIn2>*/}
       {/*<Register2></Register2> */}
       {/*<Contact></Contact> */}
-      {/* */}
+      {/* <About></About>*/}
       {/*<Messaging></Messaging>*/}
       {/*<Notification></Notification>*/}
       {/*<SignUp></SignUp>*/}
       {/*<Login></Login>*/}
       {/*<UserProfile></UserProfile> */}
       <Header></Header>
-      <About></About>
+      <ChatRoom></ChatRoom>
       <Footer></Footer>
       
     
