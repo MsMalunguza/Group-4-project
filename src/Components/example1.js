@@ -1,22 +1,22 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Form() {
-  const [answer, setAnswer] = useState('');
+  const [answer, setAnswer] = useState("");
   const [error, setError] = useState(null);
-  const [status, setStatus] = useState('typing');
+  const [status, setStatus] = useState("typing");
 
-  if (status === 'success') {
-    return <h1>That's right!</h1>
+  if (status === "success") {
+    return <h1>That's right!</h1>;
   }
 
   async function handleSubmit(e) {
     e.preventDefault();
-    setStatus('submitting');
+    setStatus("submitting");
     try {
       await submitForm(answer);
-      setStatus('success');
+      setStatus("success");
     } catch (err) {
-      setStatus('typing');
+      setStatus("typing");
       setError(err);
     }
   }
@@ -35,20 +35,13 @@ export default function Form() {
         <textarea
           value={answer}
           onChange={handleTextareaChange}
-          disabled={status === 'submitting'}
+          disabled={status === "submitting"}
         />
         <br />
-        <button disabled={
-          answer.length === 0 ||
-          status === 'submitting'
-        }>
+        <button disabled={answer.length === 0 || status === "submitting"}>
           Submit
         </button>
-        {error !== null &&
-          <p className="Error">
-            {error.message}
-          </p>
-        }
+        {error !== null && <p className="Error">{error.message}</p>}
       </form>
     </>
   );
@@ -58,9 +51,9 @@ function submitForm(answer) {
   // Pretend it's hitting the network.
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      let shouldError = answer.toLowerCase() !== 'lima'
+      let shouldError = answer.toLowerCase() !== "lima";
       if (shouldError) {
-        reject(new Error('Good guess but a wrong answer. Try again!'));
+        reject(new Error("Good guess but a wrong answer. Try again!"));
       } else {
         resolve();
       }
@@ -68,16 +61,8 @@ function submitForm(answer) {
   });
 }
 
-
-
-
-
-
-
-
-
-
-{/* <div className="App">
+{
+  /* <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -92,4 +77,5 @@ function submitForm(answer) {
           HI MALUNGUZA gggg
         </a>
       </header>
-    </div> */}
+    </div> */
+}
