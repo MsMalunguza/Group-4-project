@@ -59,7 +59,7 @@ function Header() {
           </form>
 
           <div className="flex items-center justify-around w-4/12 ml-4 mr-2 space-x-4 text-white">
-            <NavLink to="/account" className="flex items-center text-lg">
+            <NavLink to="/accounts" className="flex items-center text-lg">
               <BsPerson className="mr-1 w-9 h-6" />
               Account
             </NavLink>
@@ -94,7 +94,7 @@ function Header() {
                 <NavLink to="/" className="text-white">
                   Digital ticketing
                 </NavLink>
-                <NavLink to="/order-tracking" className="text-white">
+                <NavLink to="/OrderTracking" className="text-white">
                   orders/Tracking
                 </NavLink>
                 <NavLink to="/payments" className="text-white">

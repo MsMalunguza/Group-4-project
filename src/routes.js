@@ -10,6 +10,8 @@ import ChatRoom from "./Components/chatroom";
 import Notification from "./Components/notification";
 import Register2 from "./Components/Register2";
 import LogIn2 from "./Components/LogIn2";
+import OrderTracking from "./Components/OrderTracking";
+import UserProfile from "./Components/accounts";
 
 
 const router = createBrowserRouter([
@@ -49,6 +51,15 @@ const router = createBrowserRouter([
   {
     path: "Login2",
     element: <LogIn2></LogIn2>
+  },
+  {
+    path: "OrderTracking",
+    element: <OrderTracking></OrderTracking>
+  },
+  
+  {
+    path:"accounts",
+    element: <UserProfile></UserProfile>
   },
 
   
