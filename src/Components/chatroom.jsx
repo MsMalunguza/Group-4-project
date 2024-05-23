@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Messagingf from './messagingft';
 
+
 const ChatRoom = () => {
   const [messages, setMessages] = useState([
     { id: 1, sender: 'senator', text: 'I feeliz' },
@@ -23,7 +24,6 @@ const ChatRoom = () => {
       setNewMessage('');
     }
   };
-  
 
   return (
     <div className="flex h-screen bg-gray-100">
