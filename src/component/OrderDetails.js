@@ -16,4 +16,4 @@ const OrderDetails = ({ details }) => {
     );
 };
 
-export default OrderDetails;
+export default OrderDetails
