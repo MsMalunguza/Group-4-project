@@ -1,3 +1,110 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .notification-bell {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .notification-bell .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
+  .notification-list {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-inline: 0;
+    background: black;
+    border: 1px solid #ddd;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-list .header,
+  .notification-list .footer {
+    padding: 10px;
+    margin-inline: 0;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+  }
+  
+  .notification-list .footer {
+    border-top: 1px solid #dddddd;
+    border-bottom: none;
+  }
+  
+  .notification-list ul {
+    list-style: none;
+    margin: 4;
+    padding: 0;
+  }
+  
+  .notification-list li {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-list .icon {
+    width: 20px;
+    height: 20px;
+    margin-inline: 0;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .notification-list .icon.urgent {
+    background: orange;
+  }
+  
+  .notification-list .icon.normal {
+    background: orange;
+  }
+  
+  .notification-list .time {
+    font-size: 12px;
+    color: #999;
+    margin-left: auto;
+  }
+  
+  .notification-list .clear {
+    color: #ffbb00;
+    cursor: pointer;
+    margin-inline: 0;
+  }
+  
