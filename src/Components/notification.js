@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
 const Notification = () => {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    // Simulate fetching notifications from an API
     const fetchNotifications = async () => {
-      // You can replace this with an actual API call
       const data = [
         {
           id: 1,
@@ -67,7 +67,9 @@ const Notification = () => {
   };
 
   return (
-    <div className="w-96 bg-white shadow-lg rounded-lg overflow-hidden">
+    <>
+    <Header></Header>
+    <div className="w-96 bg-white shadow-lg rounded-lg overflow-hidden items-center">
       <div className="p-4 border-b">
         <h2 className="text-xl font-semibold text-gray-800">Notifications</h2>
       </div>
@@ -102,6 +104,8 @@ const Notification = () => {
         ))}
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 

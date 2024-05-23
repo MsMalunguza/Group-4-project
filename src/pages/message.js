@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 
 function Messaging() {
   const [messages, setMessages] = useState([
@@ -26,6 +28,8 @@ function Messaging() {
   };
 
   return (
+    <>
+    <Header></Header>
     <div className="flex flex-col h-screen p-4 bg-gray-100">
       <div className="flex-grow overflow-auto bg-white rounded-lg shadow-lg p-4">
         <div className="mb-4 text-center text-gray-500">{messages[0].timestamp}</div>
@@ -53,6 +57,8 @@ function Messaging() {
         </button>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 }
 

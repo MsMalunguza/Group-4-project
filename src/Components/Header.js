@@ -63,11 +63,11 @@ function Header() {
               <BsPerson className="mr-1 w-9 h-6" />
               Account
             </NavLink>
-            <NavLink to="/register" className="flex items-center text-lg">
+            <NavLink to="/Register2" className="flex items-center text-lg">
               <BsBoxArrowInRight className="mr-1 w-9 h-6" />
               Register
             </NavLink>
-            <NavLink to="/signin" className="flex items-center text-lg">
+            <NavLink to="/Login2" className="flex items-center text-lg">
               <MdManageAccounts className="mr-1 w-9 h-6" />
               SignIn
             </NavLink>
@@ -106,8 +106,11 @@ function Header() {
                 <NavLink to="/contact" className="text-white">
                   Contact
                 </NavLink>
-                <NavLink to="/" className="text-white">
+                <NavLink to="/about" className="text-white">
                   About
+                </NavLink>
+                <NavLink to="/chatroom" className="text-white">
+                  Messaging
                 </NavLink>
               </div>
             </div>

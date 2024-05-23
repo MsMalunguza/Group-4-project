@@ -3,7 +3,7 @@ import img1 from "./laptop2.webp";
 export default function Card() {
   return (
     <div>
-      <div class="px-10 py-20 bg-gray-200 grid gap-12 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2">
+      <div class="px-10 py-20 bg-gray-200 grid gap-10 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2">
         <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
           <div>
             <img src={img1} alt="" />

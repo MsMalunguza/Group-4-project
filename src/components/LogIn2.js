@@ -1,6 +1,9 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
+import Header from "./Header";
+
 
 export default function LogIn2() {
   const {
@@ -11,6 +14,8 @@ export default function LogIn2() {
   const onSubmit = (data) => console.log(data);
 
   return (
+    <>
+    <Header></Header>
     <div className="h-screen flex flex-col items-center justify-center">
       <form
         className="shadow-2xl bg-gray-300 flex flex-col justify-center items-center rounded-lg w-96"
@@ -89,5 +94,7 @@ export default function LogIn2() {
         </div>
       </form>
     </div>
+    <Footer></Footer>
+    </>
   );
 }

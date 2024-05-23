@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Header from './Header';
 const UserProfile = () => {
   const handleSignOut = () => {
     // Handle sign out
@@ -7,6 +7,8 @@ const UserProfile = () => {
   };
 
   return (
+  <>
+  <Header></Header>
     <div className="min-h-screen flex items-center justify-center bg-purple-150">
       <div className="bg-pink-200 p-8 rounded-lg shadow-lg w-full max-w-md">
         <div className="flex justify-between items-center mb-6">
@@ -62,6 +64,7 @@ const UserProfile = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 
