@@ -10,6 +10,7 @@ import OrderTracking from "./Components/OrderTracking";
 import LogIn2 from "./Components/LogIn2";
 import Register2 from "./Components/Register2";
 import CustomerTicketingForm from "./Components/CustomerTicketingForm";
+import CartWrapper from "./Components/CartWrapper";
 
 function App() {
   return (
@@ -19,8 +20,8 @@ function App() {
       {/*<UserProfile></UserProfile> */}
       {/*<ChatRoom></ChatRoom> */}
       {/* <Notification></Notification>*/}
-      <CustomerTicketingForm></CustomerTicketingForm>
-      <ChatRoom></ChatRoom>
+      <CartWrapper></CartWrapper>
+
     </div>
   );
 }
