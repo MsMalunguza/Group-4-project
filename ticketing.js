@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
-const App = () => {
+
+const Ticketing = () => {
   const [qrCodeValue, setQrCodeValue] = useState('');
   const [formValues, setFormValues] = useState({
     firstName: '',
@@ -82,7 +83,7 @@ const App = () => {
           <button
             type="button"
             onClick={generateTicketNumber}
-            className="w-full p-2 mb-4 bg-blue-600 text-white rounded-md hover:bg-yellow-500 transition ease-in-out duration-300"
+            className="w-full p-2 mb-4 bg-black text-white rounded-md hover:bg-yellow-500 transition ease-in-out duration-300"
           >
             Generate QR Code
           </button>
@@ -103,4 +104,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Ticketing;

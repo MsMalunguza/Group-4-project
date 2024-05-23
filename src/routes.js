@@ -1,8 +1,6 @@
 import React from "react";
-import { createBrowserRouter } from "react-router-dom";
-import Home from "./Components/Home";
-import Login from "./Components/Login";
-import DigitalTicketing from "./Components/DigitalTicketing";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Ticketing from "./Components/ticketing"; // Correct the component name to start with an uppercase letter
 
 import "./App.css";
 import App from "./App";
@@ -12,19 +10,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
-
   {
-    path: "/home",
-    element: <Home />,
+    path: "/ticketing",
+    element: <Ticketing />, // Correct the component name to start with an uppercase letter
   },
-  {
-    path: "/DigitalTicketing",
-    element: <DigitalTicketing />,
-  },
-  {
-    path: "/Login",
-    element: <Login />,
-  },
- 
 ]);
-export default router;
+
+function Root() {
+  return <RouterProvider router={router} />;
+}
+
+export default Root;

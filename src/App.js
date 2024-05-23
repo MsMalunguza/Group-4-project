@@ -25,13 +25,14 @@ import React from "react";
 
 
 import Register2 from "./Components/LogIn/Register2";
-import ticketing from "./digitalTicketing/ticketing";
+import ticketings from "./Components/ticketing"; 
 
 function App() {
   return (
     <div>
+      { <Register2></Register2>}
      <ticketing></ticketing>
-      <Register2></Register2> 
+      
     </div>
   );
 }
