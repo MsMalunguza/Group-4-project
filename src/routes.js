@@ -3,6 +3,7 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import "./App.css"
 import App from "./App";
+<<<<<<< HEAD
 import Payments from "./Components/Payments";
 import Contact from "./Components/contact";
 import About from "./Components/about";
@@ -13,6 +14,9 @@ import LogIn2 from "./Components/LogIn2";
 import OrderTracking from "./Components/OrderTracking";
 import UserProfile from "./Components/accounts";
 
+=======
+import NotificationBell from "./Components/NotificationBell";
+>>>>>>> bsc-inf-14-21
 
 const router = createBrowserRouter([
   {
@@ -29,8 +33,21 @@ const router = createBrowserRouter([
     element: <Payments></Payments>
   },
   {
+<<<<<<< HEAD
     path: "/contact",
     element: <Contact></Contact>
+=======
+    path:"/NotificationBell",
+    element:<NotificationBell/>
+  },
+  {
+    path:"/NotificationList",
+    element:<NotificationList/>
+  },
+  {
+    path: "/Login",
+    element: <Login />,
+>>>>>>> bsc-inf-14-21
   },
   {
     path: "/about",
