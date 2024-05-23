@@ -6,12 +6,10 @@ import Messaging from "./pages/message";
 import Notification from "./pages/notification";
 import UserProfile from "./Components/accounts";
 import ChatRoom from "./Components/chatroom";
-
-
-import Register from "./Components/LogIn/Register";
-import LogIn from "./Components/LogIn/LogIn";
-import LogIn2 from "./Components/LogIn/LogIn2";
-import Register2 from "./Components/LogIn/Register2";
+import OrderTracking from "./Components/OrderTracking";
+import LogIn2 from "./Components/LogIn2";
+import Register2 from "./Components/Register2";
+import CustomerTicketingForm from "./Components/CustomerTicketingForm";
 
 function App() {
   return (
@@ -21,6 +19,7 @@ function App() {
       {/*<UserProfile></UserProfile> */}
       {/*<ChatRoom></ChatRoom> */}
       {/* <Notification></Notification>*/}
+      <CustomerTicketingForm></CustomerTicketingForm>
       <ChatRoom></ChatRoom>
     </div>
   );
