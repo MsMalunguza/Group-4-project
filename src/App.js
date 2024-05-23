@@ -1,17 +1,17 @@
+// src/App.js
 import React from 'react';
-import NotificationBell from './Components/NotificationBell';
+import Notification from './Components/Notification';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header>
+    <div className="flex flex-col min-h-screen bg-gray-100">
+      <header className="bg-gray-800 text-white p-4 text-center">
         <h1>Header</h1>
-        <NotificationBell />
       </header>
       <main className="flex-1 flex justify-center items-center">
-        <p></p>
+        <Notification />
       </main>
-      <footer>
+      <footer className="bg-gray-800 text-white p-4 text-center">
         <p>Footer</p>
       </footer>
     </div>
