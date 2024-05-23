@@ -13,7 +13,7 @@ export default function Register2() {
   return (
     <div className="h-screen flex flex-col items-center justify-center ">
       <form
-        className=" flex flex-col rounded-lg w-96 shadow-2xl bg-gray-300 w-5/12 pl-14 pr-14"
+        className=" flex flex-col rounded-lg w-96 shadow-2xl bg-gray-320 w-5/12 pl-14 pr-14"
         onSubmit={handleSubmit(onSubmit)}
       >
         <h1 className="font-bold  text-3xl p-2">Register</h1>
@@ -29,7 +29,7 @@ export default function Register2() {
           />
         </div>
         {errors.userName?.type === "required" && (
-          <p className="text-red-500" role="alert">
+          <p className="text-red-490" role="alert">
             Username is required
           </p>
         )}
