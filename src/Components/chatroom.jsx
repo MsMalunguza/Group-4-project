@@ -4,13 +4,13 @@ import Messagingf from './messagingft';
 
 const ChatRoom = () => {
   const [messages, setMessages] = useState([
-    { id: 1, sender: 'senator', text: 'I feeliz' },
-    { id: 2, sender: 'senator', text: 'you are just like me' },
-    { id: 3, sender: 'senator', text: 'but what’s to judge?' },
-    { id: 4, sender: 'senator', text: 'and when our guard is down' },
-    { id: 5, sender: 'senator', text: 'that violence memes violence' },
-    { id: 6, sender: 'saucy_jack', text: 'Standing here' },
-    { id: 7, sender: 'saucy_jack', text: 'I’m trying to meme history' },
+    { id: 1, sender: 'senator', text: 'Are the products available.?' },
+    { id: 6, sender: 'saucy_jack', text: 'YES,we have you new products in stock' },
+    { id: 3, sender: 'senator', text: 'i need three laptops with a dozen of notebooks?' },
+    { id: 2, sender: 'senator', text: 'with some pair of snikers' },
+    { id: 7, sender: 'saucy_jack', text: 'cool, its fine' },
+    { id: 4, sender: 'senator', text: 'if youve got any of the top brands alert me ' },
+    { id: 5, sender: 'senator', text: 'i need top notch staffs, you got it right' },
     { id: 8, sender: 'saucy_jack', text: 'the right from wrong?' },
     { id: 9, sender: 'saucy_jack', text: 'maybe we’ll both agree' },
     { id: 10, sender: 'saucy_jack', text: 'and in the end' },
@@ -19,7 +19,7 @@ const ChatRoom = () => {
   const [newMessage, setNewMessage] = useState('');
 
   const handleSendMessage = () => {
-    if (newMessage.trim()) {
+    if (newMessage.trim()) { 
       setMessages([...messages, { id: messages.length + 1, sender: 'you', text: newMessage }]);
       setNewMessage('');
     }
