@@ -7,6 +7,12 @@ import Notification from "./pages/notification";
 import UserProfile from "./Components/accounts";
 import ChatRoom from "./Components/chatroom";
 
+
+import Register from "./Components/LogIn/Register";
+import LogIn from "./Components/LogIn/LogIn";
+import LogIn2 from "./Components/LogIn/LogIn2";
+import Register2 from "./Components/LogIn/Register2";
+
 function App() {
   return (
     <div>
@@ -19,5 +25,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
