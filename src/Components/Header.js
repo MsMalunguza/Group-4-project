@@ -94,13 +94,16 @@ function Header() {
                 <NavLink to="/" className="text-white">
                   Digital ticketing
                 </NavLink>
-                <NavLink to="/" className="text-white">
+                <NavLink to="/order-tracking" className="text-white">
                   orders/Tracking
+                </NavLink>
+                <NavLink to="/payments" className="text-white">
+                  Payments
                 </NavLink>
                 <NavLink to="/" className="text-white">
                   Support
                 </NavLink>
-                <NavLink to="/" className="text-white">
+                <NavLink to="/contact" className="text-white">
                   Contact
                 </NavLink>
                 <NavLink to="/" className="text-white">

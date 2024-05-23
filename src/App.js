@@ -15,7 +15,6 @@ function App() {
       <Card></Card>
 
       <Footer></Footer>
-      <Payments></Payments>
     </div>
   );
 }
