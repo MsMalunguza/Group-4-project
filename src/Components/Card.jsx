@@ -3,16 +3,16 @@ import img1 from "./laptop2.webp";
 export default function Card() {
   return (
     <div>
-      <div class="px-10 py-20 bg-gray-100 grid gap-10 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2">
+      <div class="px-10 py-20 bg-gray-200 grid gap-12 lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2">
         <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
           <div>
             <img src={img1} alt="" />
           </div>
           <div class="py-4 px-4 bg-white">
-            <h3 class="text-md font-semibold text-gray-600">
+            <h3 class="text-md font-semibold text-gray-500">
               Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
             </h3>
-            <p class="mt-4 text-lg font-thin">mwk 350,000</p>
+            <p class="mt-4 text-lg font-thin">mwk 300,000</p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
