@@ -17,7 +17,7 @@ export default function Register2() {
     <Header></Header>
 <div className="flex flex-col items-center justify-center">
   <form
-    className="flex flex-col rounded-lg shadow-2xl bg-gray-300 p-10 w-full max-w-2xl"
+    className="flex flex-col rounded-0g bg-gray-300 p-10 w-full max-w-2xl"
     onSubmit={handleSubmit(onSubmit)}
   >
     <h1 className="font-bold text-5xl p-4 text-center">Register</h1>
@@ -111,13 +111,11 @@ export default function Register2() {
         className="uppercase text-white bg-black text-center border-2 rounded-full p-4 w-full max-w-xs hover:bg-white hover:text-black transition duration-700 ease-in-out"
         type="submit"
       />
+       <p>Already have an acount?</p>
 
-      <NavLink
-        to="/login"
-        className="bg-yellow-700 text-center border-2 rounded-full p-4 w-full max-w-xs hover:bg-gray-100 transition duration-700 ease-in-out"
-      >
-        SIGN IN
-      </NavLink>
+       <NavLink to="/Login2" className="text-white">
+                  SignIn
+                </NavLink>
     </div>
   </form>
 </div>
