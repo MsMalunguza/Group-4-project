@@ -14,8 +14,8 @@ function App() {
       {/*<SignUp></SignUp>*/}
       {/*<UserProfile></UserProfile> */}
       {/*<ChatRoom></ChatRoom> */}
-      {/* */}
-      <Notification></Notification>
+      {/* <Notification></Notification>*/}
+      <ChatRoom></ChatRoom>
     </div>
   );
 }
