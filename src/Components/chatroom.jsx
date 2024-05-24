@@ -54,11 +54,11 @@ const ChatRoom = () => {
           </ul>
         </div>
         <ul>
-            <li><strong>Categories intrested:</strong><p className="text-gray-600">Stationaries <br /> Clothing <br />Food</p> </li>
+            <li><strong>Categories intrested:</strong><p className="text-gray-650">Stationaries <br /> Clothing <br />Food</p> </li>
             <br />
             <strong>
             <p>Other Social Links</p>
-            <li><a href="https://twitter.com/johndoe" className="text-blue-500 hover:underline mr-4">Twitter</a></li>
+            <li><a href="https://twitter.com/johndoe" className="text-blue-600 hover:underline mr-4">Twitter</a></li>
             <li><a href="https://linkedin.com/in/johndoe" className="text-blue-500 hover:underline">LinkedIn</a></li>
             <li><a href="#" className="text-blue-500 hover:underline">088800900</a></li>
             
