@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
 const Notification = () => {
   const [notifications, setNotifications] = useState([]);
@@ -67,6 +69,8 @@ const Notification = () => {
   };
 
   return (
+    <>
+    <Header></Header>
     <div className="w-96 bg-white shadow-lg rounded-lg overflow-hidden">
       <div className="p-4 border-b">
         <h2 className="text-xl font-semibold text-gray-800">Notifications</h2>
@@ -102,6 +106,8 @@ const Notification = () => {
         ))}
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 

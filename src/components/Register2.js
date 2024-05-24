@@ -11,6 +11,7 @@ export default function Register2() {
   const onSubmit = (data) => console.log(data);
 
   return (
+    
     <div className="h-screen flex flex-col items-center justify-center ">
       <form
         className=" flex flex-col rounded-lg w-96 shadow-2xl bg-gray-300 w-5/12 pl-14 pr-14"

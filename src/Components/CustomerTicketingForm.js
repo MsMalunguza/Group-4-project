@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import QRCode from 'qrcode.react';
+import Header from './Header';
+import Footer from './Footer';
 
 const CustomerTicketingForm = () => {
   const [formData, setFormData] = useState({
@@ -31,6 +33,8 @@ const CustomerTicketingForm = () => {
   };
 
   return (
+    <>
+    <Header></Header>
     <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-md">
       <h2 className="text-2xl font-bold mb-4 text-center">Customer Ticketing Form</h2>
       <form onSubmit={handleSubmit}>
@@ -99,6 +103,8 @@ const CustomerTicketingForm = () => {
         </div>
       )}
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 

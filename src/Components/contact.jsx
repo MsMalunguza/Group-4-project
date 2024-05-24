@@ -1,7 +1,11 @@
 import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Contact() {
   return (
+    <>
+    <Header></Header>
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-4xl p-8 bg-white rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">CONTACT US</h1>
@@ -31,6 +35,8 @@ function Contact() {
      </form>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 }
 

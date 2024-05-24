@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Messagingf from './messagingft';
+import Header from './Header';
+import Footer from './Footer';
 
 
 const ChatRoom = () => {
@@ -26,6 +28,8 @@ const ChatRoom = () => {
   };
 
   return (
+    <>
+    <Header></Header>
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
       <div className="flex flex-col w-64 bg-gray-200 p-4 border-r border-gray-300">
@@ -89,6 +93,7 @@ const ChatRoom = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

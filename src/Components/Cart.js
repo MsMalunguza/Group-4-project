@@ -1,9 +1,13 @@
 import React from 'react';
 import CartItem from './CartItem';
 import PromoCode from './PromoCode';
+import Header from './Header';
+import Footer from './Footer';
 
 const Cart = ({ items, updateQuantity, removeItem, calculateTotal }) => {
   return (
+    <>
+    <Header></Header>
     <div className="w-1/2 mx-auto border border-gray-300 p-5 shadow-md">
       <div className='flex justify-between p-3 font-bold border-b border-gray-300'>
         <div className='w-1/5 text-center'>PRODUCTS</div>
@@ -41,6 +45,7 @@ const Cart = ({ items, updateQuantity, removeItem, calculateTotal }) => {
         <button className="w-full py-2 mt-5 bg-yellow-500 text-white">Checkout</button>
       </div>
     </div>
+    </>
   );
 };
 

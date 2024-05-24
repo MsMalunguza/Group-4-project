@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Cart from './Cart'
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function CartWrapper() {
     
@@ -18,13 +20,17 @@ export default function CartWrapper() {
   const removeItem = id => {
     setCartItems(cartItems.filter(item => item.id !== id));
   };
-
+  <></>
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   }
   return (
+    <>
     <div>
         <Cart items={cartItems} updateQuantity={updateQuantity} removeItem={removeItem} calculateTotal={calculateTotal}></Cart>
     </div>
-  )
+
+    <Footer></Footer>
+    </>
+  );
 }

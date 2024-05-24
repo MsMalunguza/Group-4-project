@@ -63,15 +63,15 @@ function Header() {
               <BsPerson className="mr-1 w-9 h-6" />
               Account
             </NavLink>
-            <NavLink to="/register" className="flex items-center text-lg">
+            <NavLink to="/Register2" className="flex items-center text-lg">
               <BsBoxArrowInRight className="mr-1 w-9 h-6" />
               Register
             </NavLink>
-            <NavLink to="/signin" className="flex items-center text-lg">
+            <NavLink to="/LogIn2" className="flex items-center text-lg">
               <MdManageAccounts className="mr-1 w-9 h-6" />
               SignIn
             </NavLink>
-            <NavLink to="/cart" className="flex items-center text-lg">
+            <NavLink to="/CartWrapper" className="flex items-center text-lg">
               <BsCart className="mr-1 w-9 h-6" />
               Cart
             </NavLink>
@@ -91,23 +91,26 @@ function Header() {
                 <NavLink to="/" className="text-white">
                   Home
                 </NavLink>
-                <NavLink to="/" className="text-white">
+                <NavLink to="/CustomerTicketingForm" className="text-white">
                   Digital ticketing
                 </NavLink>
-                <NavLink to="/order-tracking" className="text-white">
+                <NavLink to="/OrderTracking" className="text-white">
                   orders/Tracking
                 </NavLink>
-                <NavLink to="/payments" className="text-white">
+                <NavLink to="/Payments" className="text-white">
                   Payments
                 </NavLink>
-                <NavLink to="/" className="text-white">
+                <NavLink to="/CustomerTicketingForm" className="text-white">
                   Support
                 </NavLink>
                 <NavLink to="/contact" className="text-white">
                   Contact
                 </NavLink>
-                <NavLink to="/" className="text-white">
+                <NavLink to="/about" className="text-white">
                   About
+                </NavLink>
+                <NavLink to="/chatroom" className="text-white">
+                  Messaging
                 </NavLink>
               </div>
             </div>

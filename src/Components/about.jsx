@@ -1,7 +1,12 @@
 import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+
 
 function About() {
   return (
+    <>
+    <Header></Header>
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
       <div className="w-full max-w-5xl p-8 bg-white rounded-lg shadow-lg">
         <div className="text-center mb-12">
@@ -36,6 +41,8 @@ function About() {
         </div>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 }
 
