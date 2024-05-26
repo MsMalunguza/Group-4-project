@@ -101,7 +101,7 @@ function Header() {
                   Payments
                 </NavLink>
                 <NavLink to="/catalogue" className="text-white">
-                  Catalogue
+                  Catalog
                 </NavLink>
                 <NavLink to="/contact" className="text-white">
                   Contact
