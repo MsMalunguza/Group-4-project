@@ -100,8 +100,8 @@ function Header() {
                 <NavLink to="/Payments" className="text-white">
                   Payments
                 </NavLink>
-                <NavLink to="/CustomerTicketingForm" className="text-white">
-                  Support
+                <NavLink to="/catalogue" className="text-white">
+                  Catalogue
                 </NavLink>
                 <NavLink to="/contact" className="text-white">
                   Contact
