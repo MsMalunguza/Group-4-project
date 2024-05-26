@@ -61,6 +61,7 @@ const ChatRoom = () => {
             <li><a href="https://twitter.com/grace" className="text-blue-600 hover:underline mr-4">Twitter</a></li>
             <li><a href="https://linkedin.com/in/bright" className="text-blue-500 hover:underline">LinkedIn</a></li>
             <li><a href="https://tiktok.com/misheck_ii" className="text-blue-500 hover:underline">Tiktok</a></li>
+            <li><a href="https://github.com/QUANTIQU100" className="text-blue-500 hover:underline">GITHUB</a></li>
             <li><a href="https://facebook.com/misheck.chihana.52" className="text-blue-500 hover:underline">Facebook</a></li>
             
             <li><a href="#" className="text-blue-500 hover:underline">088800900</a></li>
