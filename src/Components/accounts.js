@@ -1,68 +1,111 @@
-import React from 'react';
+import React, { useState } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
-const UserProfile = () => {
-  const handleSignOut = () => {
-    // Handle sign out
-    alert('You have signed out.');
+function UserProfile() {
+  const [profile, setProfile] = useState({
+    firstName: "Beatrice",
+    lastName: "Ml",
+    email: "bsc-inf-08-21@unima",
+    timeZone: "South-Africa",
+    developmentMode: "Beatrice-2000",
+    Mode: "Default",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setProfile({ ...profile, [name]: value });
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-purple-150">
-      <div className="bg-pink-200 p-8 rounded-lg shadow-lg w-full max-w-md">
-        <div className="flex justify-between items-center mb-6">
-          <h1 className="text-3xl font-bold text-left text-black">HOME</h1>
-          <div className="bg-black text-white px-2 py-1 rounded">Sale</div>
+    <>
+    <Header></Header>
+    <div className="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md mt-10">
+      <h2 className="text-3xl font-semibold mb-6">Account</h2>
+      <div className="flex items-center mb-6">
+        <div className="w-24 h-24 bg-gray-200 rounded-full flex-shrink-0">
+      
         </div>
-        <div className="flex justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-24 w-24 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z" />
-          </svg>
+        <div className="ml-4">
+          <button className="bg-gray-900 text-white py-2 px-4 rounded-lg">
+            Change Profile Picture
+          </button>
+          <p className="text-gray-500 mt-2">
+            your user-profile dashboard
+          </p>
         </div>
-        <div className="mb-4">
-          <label className="block text-black text-sm font-bold mb-2">NAME</label>
-          <input
-            type="text"
-            value="PRECIOUS BANDA"
-            readOnly
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none bg-gray-200"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-black text-sm font-bold mb-2">EMAIL</label>
-          <input
-            type="email"
-            value="Bandaprecious@gmail.com"
-            readOnly
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none bg-gray-200"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-black text-sm font-bold mb-2">CONTACTS</label>
-          <input
-            type="tel"
-            value="088800900"
-            readOnly
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none bg-gray-200"
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-black text-sm font-bold mb-2">LOCATION</label>
-          <input
-            type="text"
-            value="chikanda, zomba"
-            readOnly
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none bg-gray-200"
-          />
-        </div>
-        <button
-          onClick={handleSignOut}
-          className="w-full bg-brown text-white py-2 rounded-lg hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-brown-light"
-        >
-          SIGN OUT
+      </div>
+      <div className="mb-4">
+        <label className="block text-gray-700">First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          value={profile.firstName}
+          onChange={handleChange}
+          className="w-full mt-1 p-2 border border-gray-300 rounded-lg"
+        />
+      </div>
+      <div className="mb-4">
+        <label className="block text-gray-700">Last Name</label>
+        <input
+          type="text"
+          name="lastName"
+          value={profile.lastName}
+          onChange={handleChange}
+          className="w-full mt-1 p-2 border border-gray-300 rounded-lg"
+        />
+      </div>
+      <div className="mb-4">
+        <label className="block text-gray-700">Email</label>
+        <input
+          type="email"
+          name="email"
+          value={profile.email}
+          onChange={handleChange}
+          className="w-full mt-1 p-2 border border-gray-300 rounded-lg"
+        />
+      </div>
+      <div className="mb-4">
+        <label className="block text-gray-700">Password</label>
+        <button className="bg-gray-900 text-white py-2 px-4 rounded-lg">
+          Change Password
         </button>
       </div>
+      <div className="mb-4">
+        <label className="block text-gray-900">Time Zone</label>
+        <select
+          name="timeZone"
+          value={profile.timeZone}
+          onChange={handleChange}
+          className="w-full mt-1 p-2 border border-gray-300 rounded-lg"
+        >
+          <option>Africa - Pretoria</option>
+          <option>America - New York</option>
+          <option>Africa - Malawi</option>
+          <option>Asia - China</option>
+        </select>
+        <p className="text-gray-500 mt-1">
+          Queries you create will default to this time zone.
+        </p>
+      </div>
+      <div className="mb-4">
+      </div>
+      <div className="mb-4">
+        <label className="block text-gray-700">Text Editor Mode</label>
+        <select
+          name="textEditorMode"
+          value={profile.textEditorMode}
+          onChange={handleChange}
+          className="w-full mt-1 p-2 border border-gray-300 rounded-lg"
+        >
+          <option>Default</option>
+          <option>Advanced</option>
+        </select>
+      </div>
     </div>
+    <Footer></Footer>
+    </>
   );
-};
+}
 
 export default UserProfile;
