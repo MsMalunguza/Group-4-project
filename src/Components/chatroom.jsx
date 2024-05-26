@@ -58,8 +58,11 @@ const ChatRoom = () => {
             <br />
             <strong>
             <p>Other Social Links</p>
-            <li><a href="https://twitter.com/johndoe" className="text-blue-600 hover:underline mr-4">Twitter</a></li>
-            <li><a href="https://linkedin.com/in/johndoe" className="text-blue-500 hover:underline">LinkedIn</a></li>
+            <li><a href="https://twitter.com/grace" className="text-blue-600 hover:underline mr-4">Twitter</a></li>
+            <li><a href="https://linkedin.com/in/bright" className="text-blue-500 hover:underline">LinkedIn</a></li>
+            <li><a href="https://tiktok.com/misheck_ii" className="text-blue-500 hover:underline">Tiktok</a></li>
+            <li><a href="https://facebook.com/misheck.chihana.52" className="text-blue-500 hover:underline">Facebook</a></li>
+            
             <li><a href="#" className="text-blue-500 hover:underline">088800900</a></li>
             
             </strong>
