@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { NavLink } from "react-router-dom";
 
 
-export default function Register2() {
+export default function RegisterTwo() {
   const {
     register,
     handleSubmit,
