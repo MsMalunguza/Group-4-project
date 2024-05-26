@@ -14,6 +14,7 @@ import Contact from "./Components/contact";
 import ChatRoom from "./Components/chatroom";
 import Notification from "./Components/notification";
 import CartWrapper from "./Components/CartWrapper";
+import Catalog from "./Components/catalogue";
 
 
 const router = createBrowserRouter([
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
   {
     path: "/CartWrapper",
     element: <CartWrapper></CartWrapper>
+  },
+  {
+    path: "/catalogue",
+    element: <Catalog></Catalog>
   }
 ]);
 export default router;
