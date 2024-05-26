@@ -177,7 +177,7 @@ export default function Card() {
             <div>
             <img src={img} alt="" />
           </div>
-              Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
+             <p>SPORTS JERSEYS OF ALL KINDS</p>
             </h3>
             <p class="mt-4 text-lg font-thin">mwk 350, 000</p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
@@ -208,20 +208,14 @@ export default function Card() {
           </div>
         </div>
         <div class="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 cursor-pointer">
-          <div>
-            <img
-              src="https://images.indianexpress.com/2021/12/macbook-pro-2021-review-featured-image.jpg"
-              alt=""
-            />
-          </div>
           <div class="py-4 px-4 bg-white">
             <h3 class="text-md font-semibold text-gray-600">
             <div>
             <img src={imgq} alt="" />
           </div>
-              Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
+          <p>NIKE SHOES @ 45,000MWK</p>
             </h3>
-            <p class="mt-4 text-lg font-thin">mwk 500,000</p>
+            <p class="mt-4 text-lg font-thin"></p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -255,9 +249,9 @@ export default function Card() {
             <div>
             <img src={img2} alt="" />
           </div>
-              Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
+          <p>Sports jersey now at discount @23,00mwk</p>
             </h3>
-            <p class="mt-4 text-lg font-thin">mwk 500,000</p>
+            <p class="mt-4 text-lg font-thin"></p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -289,9 +283,9 @@ export default function Card() {
             <div>
             <img src={img5} alt="" />
           </div>
-              Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
+          <p>Cloths of men and women in stock</p>
             </h3>
-            <p class="mt-4 text-lg font-thin">mwk 500,000</p>
+            <p class="mt-4 text-lg font-thin">GET YOURS NOW</p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -323,9 +317,9 @@ export default function Card() {
             <div>
             <img src={img4} alt="" />
           </div>
-              Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
+          <p>IPHONE 13 pro @760,00mwk</p>
             </h3>
-            <p class="mt-4 text-lg font-thin">mwk 500,000</p>
+            <p class="mt-4 text-lg font-thin">shop now and its on your way!!</p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -357,9 +351,9 @@ export default function Card() {
             <div>
             <img src={img5} alt="" />
           </div>
-              Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
+          <p>Cloths of men and women in stock</p>
             </h3>
-            <p class="mt-4 text-lg font-thin">mwk 500,000</p>
+            <p class="mt-4 text-lg font-thin">ORDER YOURS NOW!</p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -391,9 +385,9 @@ export default function Card() {
             <div>
             <img src={img} alt="" />
           </div>
-              Apple MacBook Pro M1 13.3&quot; Silver 16GB/512GB (MYDC2FN/A-16GB)
+          <p>Jerseys of top leagues @cheapest price</p>
             </h3>
-            <p class="mt-4 text-lg font-thin">mwk 500,000</p>
+            <p class="mt-4 text-lg font-thin">contact the seller for discount and more!</p>
             <span class="flex items-center justify-center mt-4 w-full bg-yellow-400 hover:bg-yellow-500 py-1 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
