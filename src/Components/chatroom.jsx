@@ -54,12 +54,16 @@ const ChatRoom = () => {
           </ul>
         </div>
         <ul>
-            <li><strong>Categories intrested:</strong><p className="text-gray-600">Stationaries <br /> Clothing <br />Food</p> </li>
+            <li><strong>Categories intrested:</strong><p className="text-gray-650">Stationaries <br /> Clothing <br />Food</p> </li>
             <br />
             <strong>
             <p>Other Social Links</p>
-            <li><a href="https://twitter.com/johndoe" className="text-blue-500 hover:underline mr-4">Twitter</a></li>
-            <li><a href="https://linkedin.com/in/johndoe" className="text-blue-500 hover:underline">LinkedIn</a></li>
+            <li><a href="https://twitter.com/grace" className="text-blue-600 hover:underline mr-4">Twitter</a></li>
+            <li><a href="https://linkedin.com/in/bright" className="text-blue-500 hover:underline">LinkedIn</a></li>
+            <li><a href="https://tiktok.com/misheck_ii" className="text-blue-500 hover:underline">Tiktok</a></li>
+            <li><a href="https://github.com/QUANTIQU100" className="text-blue-500 hover:underline">GITHUB</a></li>
+            <li><a href="https://facebook.com/misheck.chihana.52" className="text-blue-500 hover:underline">Facebook</a></li>
+            
             <li><a href="#" className="text-blue-500 hover:underline">088800900</a></li>
             
             </strong>
@@ -68,7 +72,7 @@ const ChatRoom = () => {
 
       {/* Chat area */}
       <div className="flex flex-col flex-grow">
-        <div className="flex-shrink-0 p-4 bg-blue-400 text-white">
+        <div className="flex-shrink-0 p-4 bg-gray-900 text-white">
           <h1 className="text-xl font-semibold"><a href="/home" className="flex flex-row">HOME</a>Chat Room</h1>
         </div>
         <div className="flex flex-col flex-grow p-4 overflow-auto">
@@ -85,7 +89,7 @@ const ChatRoom = () => {
             onChange={(e) => setNewMessage(e.target.value)}
           />
           <button
-            className="px-4 py-2 bg-blue-500 text-white rounded-r-lg"
+            className="px-4 py-2 bg-black text-white rounded-r-lg"
             onClick={handleSendMessage}
           >
             Send
