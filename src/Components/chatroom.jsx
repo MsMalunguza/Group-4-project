@@ -68,7 +68,7 @@ const ChatRoom = () => {
 
       {/* Chat area */}
       <div className="flex flex-col flex-grow">
-        <div className="flex-shrink-0 p-4 bg-blue-400 text-white">
+        <div className="flex-shrink-0 p-4 bg-gray-900 text-white">
           <h1 className="text-xl font-semibold"><a href="/home" className="flex flex-row">HOME</a>Chat Room</h1>
         </div>
         <div className="flex flex-col flex-grow p-4 overflow-auto">
