@@ -1,6 +1,6 @@
 import React from "react";
 import { BsLinkedin, BsYoutube, BsGithub, BsInstagram } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { BsSearch } from "react-icons/bs";
 
@@ -107,15 +107,15 @@ const Footer = () => {
             <div className="w-full md:w-3/12 mb-4 md:mb-0">
               <h4 className="text-white mb-4">Account</h4>
               <div className="flex flex-col">
-                <Link className="text-white py-2 mb-1" to="">
-                  About Us
-                </Link>
+                <NavLink to="/about" className="text-white">
+                  About
+                </NavLink>
                 <Link className="text-white py-2 mb-1" to="">
                   Faq
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <NavLink to="/contact" className="text-white">
                   Contact
-                </Link>
+                </NavLink>
               </div>
             </div>
             <div className="w-full md:w-2/12">
