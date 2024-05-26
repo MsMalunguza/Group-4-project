@@ -85,7 +85,7 @@ const ChatRoom = () => {
             onChange={(e) => setNewMessage(e.target.value)}
           />
           <button
-            className="px-4 py-2 bg-blue-500 text-white rounded-r-lg"
+            className="px-4 py-2 bg-black text-white rounded-r-lg"
             onClick={handleSendMessage}
           >
             Send
