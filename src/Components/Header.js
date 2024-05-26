@@ -10,6 +10,7 @@ import {
 import { MdManageAccounts } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import SearchForm from "./search";
 
 function Header() {
   const { register, handleSubmit } = useForm();
@@ -42,21 +43,7 @@ function Header() {
               UNIMA Market Place
             </Link>
           </div>
-
-          <form onSubmit={handleSubmit(onSubmit)} className=" flex w-4/12">
-            <input
-              type="text"
-              placeholder="Search..."
-              {...register("searchQuery", { required: true })}
-              className="border p-2 rounded-l-md w-full"
-            />
-            <button
-              type="submit"
-              className="bg-yellow-500 text-white px-4 py-2 rounded-r-md hover:bg-gray-400 "
-            >
-              <BsSearch className="text-lg" />
-            </button>
-          </form>
+          <SearchForm></SearchForm>
 
           <div className="flex items-center justify-around w-4/12 ml-4 mr-2 space-x-4 text-white">
             <NavLink to="/account" className="flex items-center text-lg">
