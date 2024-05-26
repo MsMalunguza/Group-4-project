@@ -164,7 +164,7 @@ export default function Catalog() {
           </main>
         </div>
       </div>
-      <Footer />
+      
     </>
   );
 }
