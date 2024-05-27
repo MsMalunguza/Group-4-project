@@ -3,8 +3,8 @@ import { createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import App from "./App";
 import UserProfile from "./Components/accounts";
-import Register2 from "./Components/Register2";
-import LogIn2 from "./Components/LogIn2";
+import RegisterTwo from "./Components/RegisterTwo";
+import LogInTwo from "./Components/LogInTwo";
 import CustomerTicketingForm from "./Components/CustomerTicketingForm";
 import Card from "./Components/Card";
 import PaymentForm from "./Components/Payments";
@@ -30,63 +30,63 @@ const router = createBrowserRouter([
 
   {
     path: "/accounts",
-    element: <UserProfile></UserProfile>
+    element: <UserProfile></UserProfile>,
   },
 
   {
-    path: "/Register2",
-    element: <Register2></Register2>
+    path: "/RegisterTwo",
+    element: <RegisterTwo></RegisterTwo>,
   },
 
   {
-    path: "/LogIn2",
-    element: <LogIn2></LogIn2>
+    path: "/LogInTwo",
+    element: <LogInTwo></LogInTwo>,
   },
 
   {
     path: "/CustomerTicketingForm",
-    element: <CustomerTicketingForm></CustomerTicketingForm>
+    element: <CustomerTicketingForm></CustomerTicketingForm>,
   },
 
   {
     path: "/Card",
-    element: <Card></Card>
+    element: <Card></Card>,
   },
 
   {
     path: "/Payments",
-    element: <PaymentForm></PaymentForm>
+    element: <PaymentForm></PaymentForm>,
   },
 
   {
     path: "/OrderTracking",
-    element: <OrderTracking></OrderTracking>
+    element: <OrderTracking></OrderTracking>,
   },
 
   {
     path: "/about",
-    element: <About></About>
+    element: <About></About>,
   },
 
   {
     path: "/contact",
-    element: <Contact></Contact>
+    element: <Contact></Contact>,
   },
   {
     path: "/chatroom",
-    element: <ChatRoom></ChatRoom>
+    element: <ChatRoom></ChatRoom>,
   },
   {
     path: "/notification",
-    element: <Notification></Notification>
+    element: <Notification></Notification>,
   },
   {
     path: "/CartWrapper",
-    element: <CartWrapper></CartWrapper>
+    element: <CartWrapper></CartWrapper>,
   },
   {
     path: "/catalogue",
-    element: <Catalog></Catalog>
+    element: <Catalog></Catalog>,
   }
 ]);
 export default router;
