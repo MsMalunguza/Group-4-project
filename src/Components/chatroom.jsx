@@ -6,17 +6,15 @@ import Footer from './Footer';
 
 const ChatRoom = () => {
   const [messages, setMessages] = useState([
-    { id: 1, sender: 'senator', text: 'I feeliz' },
-    { id: 2, sender: 'senator', text: 'you are just like me' },
-    { id: 3, sender: 'senator', text: 'but what’s to judge?' },
-    { id: 4, sender: 'senator', text: 'and when our guard is down' },
-    { id: 5, sender: 'senator', text: 'that violence memes violence' },
-    { id: 6, sender: 'saucy_jack', text: 'Standing here' },
-    { id: 7, sender: 'saucy_jack', text: 'I’m trying to meme history' },
-    { id: 8, sender: 'saucy_jack', text: 'the right from wrong?' },
-    { id: 9, sender: 'saucy_jack', text: 'maybe we’ll both agree' },
-    { id: 10, sender: 'saucy_jack', text: 'and in the end' },
-    { id: 11, sender: 'saucy_jack', text: 'it has to be this way' },
+    { id: 1, sender: 'senator', text: 'hello, i need 3 laptops' },
+    { id: 2, sender: 'senator', text: 'and some food items to keep me for this semester' },
+    { id: 6, sender: 'saucy_jack', text: 'Okay, you can send your location and i will send em to you' },
+    { id: 7, sender: 'saucy_jack', text: 'if any items you need am always available' },
+    { id: 3, sender: 'senator', text: 'Appreciate your service,' },
+    { id: 4, sender: 'senator', text: 'if i have any problem, i will come straight to you' },
+    { id: 5, sender: 'senator', text: 'i will be wating for my package delivery' },
+    { id: 8, sender: 'saucy_jack', text: 'confirm your orders and the products are on your way ' },
+    { id: 9, sender: 'saucy_jack', text: 'Thank you' },
   ]);
   const [newMessage, setNewMessage] = useState('');
 
