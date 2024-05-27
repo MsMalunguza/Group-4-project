@@ -5,7 +5,7 @@ import {
   BsBoxArrowInRight,
 } from "react-icons/bs";
 
-export default function LogIn2() {
+export default function LogInTwo() {
   const {
     register,
     handleSubmit,
